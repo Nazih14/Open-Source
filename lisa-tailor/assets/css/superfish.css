@@ -1,0 +1,201 @@
+/*** ESSENTIAL STYLES ***/
+#menu {
+	background-color:#309cad;
+	display:none;
+	}
+.sf-menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul.sf-menu > li:first-child {}
+ul.sf-menu > li {
+	float: left;
+	z-index: 10;
+	position:relative;
+	border-radius:0;
+	padding:20px 35px;
+	}
+ul.sf-menu > li > a {
+	font-family: 'Open Sans', sans-serif;
+	display:inline-block;
+	z-index: 1;
+	position: relative;
+	font-size:12px;
+	color:#ffffff;
+	text-decoration:none;
+	line-height:21px;
+	text-transform:uppercase;
+}
+ul.sf-menu > li.current>a, ul.sf-menu > li>a:hover, ul.sf-menu > li.sfHover>a, ul.sf-menu > ul > li.active>a  {
+	color:#e74c3c
+	}
+.sf-menu .sf-mega {
+	display: none;
+	z-index: 99;
+	position: absolute;
+	z-index: 5;
+	background-color:#309cad;
+	left:0;
+	top:61px
+}
+/*** mega menu dropdown ***/
+.sf-mega {
+  padding:15px 0;
+}
+.sf-mega-section {
+	display:table-cell;
+	}
+.sf-mega-section >li {
+	position:relative;
+	padding:4px 20px;
+	width:170px;
+	line-height:20px;
+	}
+.sf-mega-section >li a:hover, .sf-mega-section >li.sfHover>a {
+	color:#e74c3c
+	}
+.sf-mega-section >li a {
+	color:#fff;
+	}
+.sf-mega-section >li ul {
+	position:absolute;
+	left:170px;
+	width:170px;
+	background-color:#309cad;
+	padding:15px 20px;
+	top:-15px;
+	z-index:10;
+	display:none;
+	}
+.sf-mega-section >li ul li{
+	padding:4px 0px
+	}
+/* styling for both css and generated arrows */
+.sf-arrows .sf-with-ul:after {
+	content:'\f107';
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	display: inline;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height:0px;
+	height: auto;
+	margin-top: 0;
+	text-decoration: inherit;
+	vertical-align: middle;
+	width:1.45em;
+	padding-left:3px;
+	font-size:16px;
+	color:#fff;
+}
+.sf-mega-section .sf-with-ul:after {
+	content:'\f105';
+	font-size:16px;
+	}
+.sf-arrows > li > .sf-with-ul:focus:after,
+.sf-arrows > li:hover > .sf-with-ul:after,
+.sf-arrows > .sfHover > .sf-with-ul:after {
+	border-top-color: white; /* IE8 fallback colour */
+	}
+/*****************************************************/
+#menu-icon {
+	background: #e74c3c;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 30px;
+	padding:10px 17px;
+	text-transform: uppercase;
+	position:relative;
+}
+#menu-icon:after {
+	float:right;
+	content:"\f107";
+	background-image: none;
+	background-position: 0 0;
+	background-repeat: repeat;
+	display: inline;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	height: auto;
+	line-height: normal;
+	margin-top: 0;
+	text-decoration: inherit;
+	vertical-align: baseline;
+	width: auto;
+	display: inline-block;
+	text-decoration: inherit;
+	 text-align: center;
+	width: 1.25em;
+	font-size:26px;
+	color:#fff;
+	vertical-align:middle;
+	}
+#menu-icon.active:after {
+	content:"\f106";
+	}
+.sf-menu-phone {display:none;}
+.sf-menu-phone li { 
+	position: relative;
+	
+	background-color:#323232;
+	}
+  .sf-menu-phone li a { display: inline-block;  color: #fff;  border-bottom:1px solid #000;}
+  .sf-menu-phone  li {   font-size: 19px; font-weight: bold; padding: 0; }
+  .sf-menu-phone  li > a {padding: 10px 15px; display: block;}
+  .sf-menu-phone  li li  a {padding: 10px 15px 10px 25px; display: block; font-weight:600;}
+  .sf-menu-phone  li li li a {padding: 10px 15px 10px 35px; display: block;}
+  .sf-menu-phone li a:hover { color: #B90100; }
+  .sf-menu-phone li li {font-size: 14px;}
+  .sf-menu-phone li li.last { padding-bottom: 0 !important;  }
+  .sf-menu-phone li i {
+	position: absolute;
+	display: block;
+	top: 2px;
+	right: 0;
+	height: 24px;
+	width: 24px;
+  }
+  .sf-menu-phone  li  i {top: 8px;color:#e74c3c; font-size:21px; padding:0 20px; right:5px}
+  .sf-menu-phone  li i.icon-angle-up:before {content:'\f106' !important}
+  .sf-menu-phone li i:hover { cursor: pointer; }
+  .sf-menu-phone li i.opened { background-position: center 7px; }
+
+  /** dropdown **/
+  .sf-menu-phone ul {  width: auto;  padding: 0px 0px;  display: none;  }
+  .sf-menu-phone  li.active > a > span {color: inherit;}
+  .sf-menu-phone  li.active > a,
+  .sf-menu-phone  li:hover > a { color: #fff; background: #4a4a4a; }
+
+  .sf-menu-phone li li.active > a,
+  .sf-menu-phone li li a:hover {color: #ccc;}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
